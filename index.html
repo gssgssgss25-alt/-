@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>مركز النعمان بن مقرن</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1e3a8a"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<style>
+:root{--b1:#1e3a8a;--b2:#3b82f6;--g:#d4af37;--bg:#f0f4ff;--tx:#1e293b;--mu:#64748b;--rd:#dc2626;--gr:#16a34a;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;font-family:'Segoe UI',Tahoma,'Noto Naskh Arabic',Arial,sans-serif}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--b1);z-index:30}
+header{background:linear-gradient(135deg,var(--b1),var(--b2));color:#fff;padding:22px 18px 30px;border-radius:0 0 32px 32px;box-shadow:0 8px 24px #1e3a8a44;position:relative}
+header h1{margin:0;font-size:19px;line-height:1.6;text-align:center;padding:0 34px}
+#gear{position:absolute;left:14px;top:16px;background:#ffffff26;border:0;color:#fff;width:38px;height:38px;border-radius:50%;font-size:18px}
+#chip{position:absolute;right:14px;top:20px;font-size:11px;background:#ffffff26;border-radius:20px;padding:3px 9px}
+.ayah{margin-top:14px;background:#ffffff22;border:1px solid #ffffff44;backdrop-filter:blur(6px);border-radius:18px;padding:14px;text-align:center;font-size:18px;line-height:2;font-family:'Amiri','Traditional Arabic',serif}
+.ayah small{display:block;font-size:12px;opacity:.85}
+main{padding:16px;max-width:900px;margin:0 auto}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:-26px;position:relative}
+.st{background:#fff;border-radius:16px;padding:12px 6px;text-align:center;box-shadow:0 4px 14px #1e3a8a1a;border-bottom:3px solid var(--g)}
+.st b{display:block;font-size:26px;color:var(--b1)}.st span{font-size:12px;color:var(--mu)}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.btn{border:0;border-radius:14px;padding:13px;font-size:15px;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--b1),var(--b2));box-shadow:0 4px 12px #1e3a8a33}
+.btn.gold{background:var(--g);color:#3b2f00}.btn.sm{padding:7px 12px;font-size:13px;border-radius:10px}.btn.red{background:var(--rd)}.btn.out{background:#fff;color:var(--b1);border:1px solid var(--b2);box-shadow:none}
+.card{background:#fff;border-radius:18px;padding:14px;margin:12px 0;box-shadow:0 3px 12px #1e3a8a14}
+.card h3{margin:0 0 10px;color:var(--b1);font-size:16px}
+.it{display:flex;align-items:center;gap:10px;padding:10px 4px;border-bottom:1px solid #eef2ff}.it:last-child{border:0}
+.av{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--b1),var(--b2));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;flex:none}
+.it .t{flex:1;min-width:0}.it .t b{display:block}.it .t small{color:var(--mu)}
+.dh{background:var(--b1);color:#fff;border-radius:12px;padding:9px 12px;font-size:14px;margin:14px 0 6px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.tw{overflow-x:auto;background:#fff;border-radius:12px}
+table{border-collapse:collapse;width:100%;font-size:13px;min-width:640px}th{background:#e0e9ff;color:var(--b1)}th,td{padding:8px;text-align:center;border-bottom:1px solid #eef2ff;white-space:nowrap}
+input,select,textarea{width:100%;padding:11px;border:1px solid #cbd5e1;border-radius:11px;font-size:15px;background:#fff;color:var(--tx)}
+label{display:block;font-size:13px;color:var(--b1);margin:10px 0 4px;font-weight:600}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.search{display:grid;grid-template-columns:1.4fr 1fr;gap:8px;margin:14px 0}
+nav{position:fixed;bottom:0;left:0;right:0;background:#fff;display:flex;border-top:1px solid #dbe4ff;box-shadow:0 -4px 16px #1e3a8a1a;padding-bottom:env(safe-area-inset-bottom,0px);z-index:20}
+nav button{flex:1;border:0;background:none;padding:9px 0 8px;font-size:12px;color:var(--mu)}nav button i{display:block;font-style:normal;font-size:21px}nav button.on{color:var(--b1);font-weight:700}nav button.on i{transform:scale(1.15)}
+#ov{position:fixed;inset:0;background:#0f172a88;display:none;align-items:flex-end;justify-content:center;z-index:40}
+#sh{background:#fff;width:100%;max-width:640px;max-height:92vh;overflow:auto;border-radius:24px 24px 0 0;padding:18px 18px calc(18px + env(safe-area-inset-bottom,0px))}
+#sh h2{margin:0 0 4px;color:var(--b1);font-size:18px}
+#toast{position:fixed;top:calc(14px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);background:#0f172a;color:#fff;padding:10px 18px;border-radius:30px;z-index:60;display:none;font-size:14px}
+.al{background:#fef2f2;border:1px solid #fecaca;color:#991b1b;border-radius:12px;padding:9px 11px;margin:6px 0;font-size:14px}
+.ok{background:#fffbeb;border:1px solid #fde68a;color:#78350f;border-radius:12px;padding:9px 11px;margin:6px 0;font-size:14px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.mu{color:var(--mu);text-align:center;padding:14px;font-size:14px}
+#pa{display:none}
+.cert{border:8px double var(--g);padding:40px 24px;text-align:center;line-height:2.2;font-size:20px;color:var(--b1)}.cert h1{font-size:34px;color:var(--g)}
+@media print{body.pp>*:not(#pa){display:none!important}body.pp #pa{display:block;padding:10px}body.pp::before{display:none}table{min-width:0}}
+</style>
+</head>
+<body>
+<header><span id="chip">✅ محفوظ</span><button id="gear" onclick="go('settings')" aria-label="إعدادات">⚙️</button><h1 id="cn"></h1><div id="ay"></div></header>
+<main id="main"></main>
+<nav id="nav"></nav>
+<div id="ov" onclick="if(event.target===this)closeM()"><div id="sh"></div></div>
+<div id="toast"></div><div id="pa"></div>
+<script>
+const K='numan_v1',GR=['تمهيدي','أول','ثاني','ثالث','رابع','خامس','سادس','سابع','ثامن','تاسع','عاشر','حادي عشر','توجيهي','جامعي','ما بعد الجامعي','مجاز','خريج'];
+const D0={center:{name:'مركز النعمان بن مقرن لتحفيظ القرآن الكريم',address:'',number:'',supervisor:''},teacher:{name:'',phone:'',halaqa:'',count:'',time:''},halaqat:[],students:[],logs:[]};
+let S=JSON.parse(JSON.stringify(D0)),page='home',dirty=false,fq='',fg='';
+try{const r=JSON.parse(localStorage.getItem(K));if(r)S=Object.assign(S,r)}catch(e){}
+const $=id=>document.getElementById(id);
+const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+const today=()=>{const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')};
+const wd=d=>new Date(d+'T00:00:00').toLocaleDateString('ar',{weekday:'long'});
+const sn=id=>(S.students.find(s=>s.id===id)||{}).name||'(محذوف)';
+const days=()=>[...new Set(S.logs.map(l=>l.date))].sort();
+let tt;function toast(m){const t=$('toast');t.textContent=m;t.style.display='block';clearTimeout(tt);tt=setTimeout(()=>t.style.display='none',1800)}
+function persist(){try{localStorage.setItem(K,JSON.stringify(S));dirty=false;$('chip').textContent='✅ محفوظ '+new Date().toLocaleTimeString('ar',{hour:'2-digit',minute:'2-digit'});return true}catch(e){$('chip').textContent='⚠️ لم يُحفظ';return false}}
+function ch(){dirty=true;persist()}
+function manual(){toast(persist()?'تم الحفظ ✅':'تعذر الحفظ ⚠️')}
+setInterval(()=>{if(dirty){toast(persist()?'تم الحفظ ✅':'تعذر الحفظ ⚠️')}},5000);
+addEventListener('pagehide',persist);document.addEventListener('visibilitychange',()=>{if(document.hidden&&dirty)persist()});
+function openM(h){$('sh').innerHTML=h;$('ov').style.display='flex'}function closeM(){$('ov').style.display='none'}
+function ask(msg,cb){window._cb=cb;openM(`<h2>تأكيد</h2><p>${E(msg)}</p><div class="btns"><button class="btn red" onclick="closeM();_cb()">نعم، متأكد</button><button class="btn out" onclick="closeM()">إلغاء</button></div>`)}
+function go(p){page=p;render();scrollTo(0,0)}
+function render(){
+ $('cn').textContent=S.center.name||'مركز التحفيظ';document.title=S.center.name||'مركز التحفيظ';
+ $('ay').innerHTML=page==='home'?'<div class="ayah">﴿ إِنَّا نَحْنُ نَزَّلْنَا الذِّكْرَ وَإِنَّا لَهُ لَحَافِظُونَ ﴾<small>الحجر 9 · آية اليوم</small></div>':'';
+ $('main').innerHTML=({home,students,follow,stats,settings})[page]();
+ $('nav').innerHTML=[['home','🏠','الرئيسية'],['students','👥','الطلاب'],['follow','📝','المتابعة'],['stats','📊','الإحصائيات']].map(n=>`<button class="${page===n[0]?'on':''}" onclick="go('${n[0]}')"><i>${n[1]}</i>${n[2]}</button>`).join('');
+ if(page==='students')list();
+}
+const stc=(n,l)=>`<div class="st"><b>${n}</b><span>${l}</span></div>`;
+const sitem=(s,act)=>`<div class="it"><div class="av" onclick="rec('${s.id}')">${E([...(s.name||'؟')][0])}</div><div class="t" onclick="rec('${s.id}')"><b>${E(s.name)}</b><small>${E(s.grade||'')}${s.phone?' · '+E(s.phone):''}</small></div>${act||''}</div>`;
+function home(){
+ const t=today(),tl=S.logs.filter(l=>l.date===t);
+ const nw=[...S.students].reverse().slice(0,6).map(s=>sitem(s)).join('')||'<div class="mu">لا يوجد طلاب بعد — ابدأ بإضافة طالب</div>';
+ return `<div class="stats">${stc(S.students.length,'إجمالي الطلاب')}${stc(tl.filter(l=>l.att==='p').length,'حاضر اليوم')}${stc(tl.filter(l=>l.att==='a').length,'غائب اليوم')}</div>
+ <div class="btns"><button class="btn" onclick="stuForm()">إضافة طالب +</button><button class="btn gold" onclick="logForm()">متابعة يومية</button></div>
+ <div class="card"><h3>الطلاب الجدد</h3>${nw}</div>`;
+}
+function students(){
+ return `<div class="search"><input id="q" placeholder="🔍 بحث بالاسم" value="${E(fq)}" oninput="fq=this.value;list()"><select onchange="fg=this.value;list()"><option value="">كل الصفوف</option>${GR.map(g=>`<option ${fg===g?'selected':''}>${g}</option>`).join('')}</select></div>
+ <button class="btn" style="width:100%" onclick="stuForm()">إضافة طالب +</button><div id="sl"></div>`;
+}
+function list(){
+ const f=S.students.filter(s=>(!fq||s.name.includes(fq))&&(!fg||s.grade===fg));
+ const g={};f.forEach(s=>(g[s.created||'—']=g[s.created||'—']||[]).push(s));
+ const ds=Object.keys(g).sort();
+ $('sl').innerHTML=ds.length?ds.map((d,i)=>`<div class="dh"><span>اليوم ${i+1} - ${d} - ${g[d].length} طلاب</span></div><div class="card" style="margin-top:0">${g[d].map(s=>sitem(s,`<button class="btn sm out" onclick="stuForm('${s.id}')">✏️</button><button class="btn sm red" onclick="delStu('${s.id}')">🗑</button>`)).join('')}</div>`).join(''):'<div class="mu">لا توجد نتائج</div>';
+}
+function age(d){if(!d)return'';const b=new Date(d),n=new Date();let a=n.getFullYear()-b.getFullYear();if(n<new Date(n.getFullYear(),b.getMonth(),b.getDate()))a--;return a>=0?a:''}
+function stuForm(id){
+ const s=S.students.find(x=>x.id===id)||{};
+ openM(`<h2>${id?'تعديل بيانات طالب':'إضافة طالب'}</h2>
+ <label>الاسم رباعي *</label><input id="f_n" value="${E(s.name)}">
+ <div class="row2"><div><label>تاريخ الميلاد</label><input id="f_d" type="date" value="${E(s.dob)}" onchange="$('f_a').value=age(this.value)"></div><div><label>العمر</label><input id="f_a" type="number" value="${E(s.age)}"></div></div>
+ <div class="row2"><div><label>رقم الجوال</label><input id="f_p" type="tel" value="${E(s.phone)}"></div><div><label>رقم الهوية</label><input id="f_i" value="${E(s.nid)}"></div></div>
+ <label>الصف</label><select id="f_g"><option value="">—</option>${GR.map(g=>`<option ${s.grade===g?'selected':''}>${g}</option>`).join('')}</select>
+ <div class="row2"><div><label>عدد الأجزاء المحفوظة</label><input id="f_j" type="number" value="${E(s.juz)}"></div><div><label>تاريخ البداية</label><input id="f_s" type="date" value="${E(s.start)}"></div></div>
+ <label>تاريخ الختم</label><input id="f_e" type="date" value="${E(s.end)}">
+ <div class="btns"><button class="btn" onclick="saveStu('${id||''}')">حفظ</button><button class="btn out" onclick="closeM()">إلغاء</button></div>`);
+}
+function saveStu(id){
+ const n=$('f_n').value.trim();if(!n)return toast('الاسم مطلوب');
+ const o={name:n,dob:$('f_d').value,age:$('f_a').value,phone:$('f_p').value,nid:$('f_i').value,grade:$('f_g').value,juz:$('f_j').value,start:$('f_s').value,end:$('f_e').value};
+ if(id)Object.assign(S.students.find(x=>x.id===id),o);else S.students.push({id:uid(),created:today(),...o});
+ ch();closeM();toast('تم الحفظ ✅');render();
+}
+function delStu(id){ask('حذف الطالب «'+sn(id)+'» وكل متابعاته؟',()=>{S.students=S.students.filter(s=>s.id!==id);S.logs=S.logs.filter(l=>l.sid!==id);ch();render()})}
+function rec(id){
+ const s=S.students.find(x=>x.id===id);if(!s)return;
+ const ls=S.logs.filter(l=>l.sid===id).sort((a,b)=>b.date.localeCompare(a.date));
+ const sc=ls.filter(l=>l.score!=='');const av=sc.length?(sc.reduce((a,l)=>a+ +l.score,0)/sc.length).toFixed(1):'—';
+ openM(`<h2>سجل: ${E(s.name)}</h2><div class="card"><p>الصف: ${E(s.grade||'—')} · العمر: ${E(s.age||'—')} · الجوال: ${E(s.phone||'—')} · الهوية: ${E(s.nid||'—')}</p>
+ <p>📖 الأجزاء المحفوظة: <b>${E(s.juz||0)}</b> · البداية: ${E(s.start||'—')} · الختم: ${E(s.end||'—')}</p>
+ <p>أيام الحضور: ${ls.filter(l=>l.att==='p').length} · الغياب: ${ls.filter(l=>l.att==='a').length} · متوسط التقييم: ${av}</p></div>
+ <div class="tw"><table><tr><th>التاريخ</th><th>التسميع</th><th>المراجعة</th><th>أخطاء</th><th>التقييم</th><th>حضور</th></tr>${ls.map(l=>`<tr><td>${l.date}</td><td>${rg(l.rf,l.rt)}</td><td>${rg(l.mf,l.mt)}</td><td>${E(l.err)}</td><td>${E(l.score)}</td><td>${l.att==='p'?'✅':'❌'}</td></tr>`).join('')||'<tr><td colspan=6>لا توجد متابعات</td></tr>'}</table></div>
+ <div class="btns"><button class="btn out" onclick="stuForm('${id}')">✏️ تعديل</button><button class="btn out" onclick="expStu('${id}')">⬇️ CSV / Excel</button><button class="btn out" onclick="prStu('${id}')">🖨 PDF</button><button class="btn red" onclick="closeM();delStu('${id}')">🗑 حذف</button></div>`);
+}
+const rg=(a,b)=>(a||b)?E((a||'—')+' ← '+(b||'—')):'—';
+const att=a=>a==='p'?'حاضر ✅':'غائب ❌';
+function follow(){
+ const ds=days(),all=ds.map((d,i)=>[d,i+1]).reverse();
+ return `<button class="btn gold" style="width:100%" onclick="logForm()">إضافة متابعة +</button>`+(all.map(([d,n])=>{
+  const ls=S.logs.filter(l=>l.date===d);
+  return `<div class="dh"><span>اليوم ${n} - ${wd(d)} ${d} - ${ls.length} طلاب</span><span><button class="btn sm out" onclick="expDay('${d}')">⬇️</button> <button class="btn sm out" onclick="prDay('${d}')">🖨</button></span></div>
+  <div class="tw"><table><tr><th>الطالب</th><th>التسميع (من ← إلى)</th><th>المراجعة (من ← إلى)</th><th>الأخطاء</th><th>التقييم /10</th><th>الحضور</th><th>ملاحظات</th><th></th></tr>${ls.map(l=>`<tr><td>${E(sn(l.sid))}</td><td>${rg(l.rf,l.rt)}</td><td>${rg(l.mf,l.mt)}</td><td>${E(l.err)}</td><td>${E(l.score)}</td><td>${att(l.att)}</td><td>${E(l.note)}</td><td><button class="btn sm out" onclick="logForm('${l.id}')">✏️</button> <button class="btn sm red" onclick="delLog('${l.id}')">🗑</button></td></tr>`).join('')}</table></div>`}).join('')||'<div class="mu">لا توجد متابعات بعد</div>');
+}
+function logForm(id){
+ if(!S.students.length)return toast('أضف طالباً أولاً');
+ const l=S.logs.find(x=>x.id===id)||{date:today(),att:'p'};
+ const fld=(k,lb,t)=>`<div><label>${lb}</label><input id="l_${k}" ${t?'type="'+t+'"':''} value="${E(l[k])}"></div>`;
+ openM(`<h2>${id?'تعديل متابعة':'متابعة يومية'}</h2>
+ <div class="row2">${fld('date','التاريخ','date')}<div><label>اليوم</label><input id="l_day" disabled value="${wd(l.date)}"></div></div>
+ <label>اسم الطالب</label><select id="l_sid">${S.students.map(s=>`<option value="${s.id}" ${l.sid===s.id?'selected':''}>${E(s.name)}</option>`).join('')}</select>
+ <div class="row2">${fld('rf','التسميع من')}${fld('rt','التسميع إلى')}</div><div class="row2">${fld('mf','المراجعة من')}${fld('mt','المراجعة إلى')}</div>
+ <div class="row2">${fld('err','عدد أخطاء التسميع','number')}${fld('score','التقييم من 10','number')}</div>
+ <label>الحضور</label><select id="l_att"><option value="p" ${l.att==='p'?'selected':''}>حاضر ✅</option><option value="a" ${l.att==='a'?'selected':''}>غائب ❌</option></select>
+ <label>ملاحظات</label><textarea id="l_note" rows="2">${E(l.note)}</textarea>
+ <div class="btns"><button class="btn" onclick="saveLog('${id||''}')">حفظ</button><button class="btn out" onclick="closeM()">إلغاء</button></div>`);
+ $('l_date').onchange=function(){$('l_day').value=wd(this.value)};
+}
+function saveLog(id){
+ const v=k=>$('l_'+k).value,o={date:v('date'),sid:v('sid'),rf:v('rf'),rt:v('rt'),mf:v('mf'),mt:v('mt'),err:v('err'),score:v('score'),att:v('att'),note:v('note')};
+ if(!o.date)return toast('اختر التاريخ');if(o.score!==''&&(o.score<0||o.score>10))return toast('التقييم من 0 إلى 10');
+ if(id)Object.assign(S.logs.find(x=>x.id===id),o);else S.logs.push({id:uid(),...o});
+ ch();closeM();toast('تم الحفظ ✅');render();
+}
+function delLog(id){ask('حذف هذه المتابعة؟',()=>{S.logs=S.logs.filter(l=>l.id!==id);ch();render()})}
+function alerts(){return S.students.map(s=>{let n=0;for(const l of S.logs.filter(l=>l.sid===s.id).sort((a,b)=>b.date.localeCompare(a.date))){if(l.att==='a')n++;else break}return[s,n]}).filter(x=>x[1]>3)}
+function stats(){
+ const L=S.logs,p=L.filter(l=>l.att==='p').length,sc=L.filter(l=>l.score!==''),av=sc.length?(sc.reduce((a,l)=>a+ +l.score,0)/sc.length).toFixed(1):'—';
+ const al=alerts(),ce=L.filter(l=>l.score!==''&&+l.score===10&&l.att==='p');
+ return `<div class="stats" style="margin-top:0">${stc(L.length,'سجلات المتابعة')}${stc(L.length?Math.round(p*100/L.length)+'%':'—','نسبة الحضور')}${stc(av,'متوسط التقييم')}</div>
+ <div class="card"><h3>🔔 تنبيهات الغياب (أكثر من 3 أيام)</h3>${al.map(([s,n])=>`<div class="al">⚠️ ${E(s.name)} — غائب ${n} أيام متتالية${s.phone?' · '+E(s.phone):''}</div>`).join('')||'<div class="mu">لا توجد تنبيهات</div>'}</div>
+ <div class="card"><h3>🏅 شهادات التقدير (10/10)</h3>${ce.map(l=>`<div class="ok"><span>${E(sn(l.sid))} · ${l.date}</span><button class="btn sm gold" onclick="cert('${l.id}')">شهادة 🖨</button></div>`).join('')||'<div class="mu">لا يوجد من حقق 10/10 بعد</div>'}</div>
+ <div class="card"><h3>⬇️ التصدير</h3><div class="btns"><button class="btn out" onclick="expAll()">الطلاب CSV / Excel</button><button class="btn out" onclick="expLogs()">المتابعة CSV / Excel</button><button class="btn out" onclick="prAll()">كل الطلاب PDF</button><button class="btn out" onclick="prLogs()">المتابعة PDF</button></div><p class="mu" style="padding:4px">ملفات CSV تُفتح مباشرة في Excel. لـ PDF اختر «حفظ كـ PDF» من نافذة الطباعة.</p></div>`;
+}
+function settings(){
+ const c=S.center,t=S.teacher,f=(o,k,lb,ph)=>`<label>${lb}</label><input value="${E(o[k])}" placeholder="${ph||''}" oninput="${o===c?'S.center':'S.teacher'}.${k}=this.value;dirty=true;${k==='name'&&o===c?"$('cn').textContent=this.value":''}">`;
+ return `<h2 style="color:var(--b1)">⚙️ إعدادات المركز</h2>
+ <div class="card"><h3>بيانات المركز</h3>${f(c,'name','اسم المركز')}${f(c,'address','عنوان / مكان المركز','يمكنك تركه فارغاً أو تغييره')}${f(c,'number','رقم المركز')}${f(c,'supervisor','اسم المشرف العام')}</div>
+ <div class="card"><h3>بيانات المحفظ</h3>${f(t,'name','اسم المحفظ')}${f(t,'phone','رقم جواله')}${f(t,'halaqa','اسم الحلقة')}${f(t,'count','عدد الطلاب','الحالي: '+S.students.length)}${f(t,'time','وقت الحلقة')}</div>
+ <div class="card"><h3>الحلقات</h3>${S.halaqat.map(h=>`<div class="ok" style="display:block"><input value="${E(h.name)}" placeholder="اسم الحلقة" oninput="H('${h.id}','name',this.value)"><div class="row2"><input value="${E(h.place)}" placeholder="المكان" oninput="H('${h.id}','place',this.value)"><input value="${E(h.time)}" placeholder="الوقت" oninput="H('${h.id}','time',this.value)"></div><button class="btn sm red" style="margin-top:8px" onclick="delH('${h.id}')">حذف الحلقة</button></div>`).join('')||'<div class="mu">لا توجد حلقات</div>'}<button class="btn out" style="width:100%" onclick="S.halaqat.push({id:uid(),name:'',place:'',time:''});ch();render()">+ إضافة حلقة</button></div>
+ ${ip?'<button class="btn gold" style="width:100%;margin-bottom:12px" onclick="ip.prompt()">📲 تثبيت التطبيق على الشاشة</button>':''}
+ <div class="card"><h3>نسخة احتياطية</h3><div class="btns"><button class="btn out" onclick="bk()">⬇️ حفظ نسخة</button><button class="btn out" onclick="$('rf').click()">⬆️ استعادة نسخة</button></div><input id="rf" type="file" accept=".json,application/json" style="display:none" onchange="rs(this)"></div>
+ <button class="btn" style="width:100%" onclick="manual()">💾 حفظ البيانات</button>
+ <button class="btn red" style="width:100%;margin-top:12px" onclick="ask('مسح كل بيانات التطبيق نهائياً؟',()=>{S=JSON.parse(JSON.stringify(D0));ch();go('home')})">مسح كل البيانات</button>`;
+}
+const bk=()=>dl('numan-backup-'+today()+'.json',JSON.stringify(S));
+function rs(inp){const f=inp.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const o=JSON.parse(r.result);if(!o.students||!o.logs)throw 0;S=Object.assign(JSON.parse(JSON.stringify(D0)),o);ch();toast('تمت الاستعادة ✅');go('home')}catch(e){toast('ملف غير صالح')}};r.readAsText(f)}
+const H=(id,k,v)=>{S.halaqat.find(h=>h.id===id)[k]=v;dirty=true};
+function delH(id){ask('حذف الحلقة؟',()=>{S.halaqat=S.halaqat.filter(h=>h.id!==id);ch();render()})}
+/* export */
+const csv=r=>'\ufeff'+r.map(x=>x.map(c=>'"'+String(c??'').replace(/"/g,'""')+'"').join(',')).join('\r\n');
+async function dl(n,t){try{const d=window.claude&&await claude.use('downloads');if(d){await d.save({filename:n,data:t});return}}catch(e){if(e&&e.code==='declined')return}
+ try{const u=URL.createObjectURL(new Blob([t],{type:'text/plain;charset=utf-8'})),a=document.createElement('a');a.href=u;a.download=n;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),3000);toast('تم التنزيل ⬇️')}catch(e){toast('تعذر التصدير')}}
+const SH=['الاسم','تاريخ الميلاد','العمر','الجوال','الهوية','الصف','الأجزاء المحفوظة','تاريخ البداية','تاريخ الختم'],sr=s=>[s.name,s.dob,s.age,s.phone,s.nid,s.grade,s.juz,s.start,s.end];
+const LH=['اليوم','التاريخ','الطالب','تسميع من','تسميع إلى','مراجعة من','مراجعة إلى','أخطاء','التقييم','الحضور','ملاحظات'],lr=l=>[days().indexOf(l.date)+1,l.date,sn(l.sid),l.rf,l.rt,l.mf,l.mt,l.err,l.score,l.att==='p'?'حاضر':'غائب',l.note];
+const sorted=a=>[...a].sort((x,y)=>x.date.localeCompare(y.date));
+const expAll=()=>dl('students.csv',csv([SH,...S.students.map(sr)]));
+const expLogs=()=>dl('followup-all.csv',csv([LH,...sorted(S.logs).map(lr)]));
+const expDay=d=>dl('day-'+d+'.csv',csv([LH,...S.logs.filter(l=>l.date===d).map(lr)]));
+const expStu=id=>dl('student-'+sn(id).replace(/\s+/g,'_')+'.csv',csv([LH,...sorted(S.logs.filter(l=>l.sid===id)).map(lr)]));
+const tb=(h,r)=>`<table dir="rtl"><tr>${h.map(x=>'<th>'+E(x)+'</th>').join('')}</tr>${r.map(x=>'<tr>'+x.map(c=>'<td>'+E(c)+'</td>').join('')+'</tr>').join('')}</table>`;
+function pr(h){$('pa').innerHTML=`<h2 style="text-align:center;color:#1e3a8a">${E(S.center.name)}</h2>`+h;document.body.classList.add('pp');try{window.print()}catch(e){toast('الطباعة غير متاحة هنا')}setTimeout(()=>{document.body.classList.remove('pp');$('pa').innerHTML=''},600)}
+const prAll=()=>pr(tb(SH,S.students.map(sr))),prLogs=()=>pr(tb(LH,sorted(S.logs).map(lr))),prDay=d=>pr('<h3>'+wd(d)+' '+d+'</h3>'+tb(LH,S.logs.filter(l=>l.date===d).map(lr))),prStu=id=>{closeM();pr('<h3>'+E(sn(id))+'</h3>'+tb(LH,sorted(S.logs.filter(l=>l.sid===id)).map(lr)))};
+function cert(id){const l=S.logs.find(x=>x.id===id);pr(`<div class="cert"><h1>شهادة تقدير</h1>يسر ${E(S.center.name)}<br>أن يمنح الطالب<br><b style="font-size:28px">${E(sn(l.sid))}</b><br>هذه الشهادة لحصوله على تقدير كامل (10/10) في التسميع<br>بتاريخ ${l.date}<br><br>المشرف العام: ${E(S.center.supervisor||'................')}</div>`)}
+/* PWA manifest */
+if(0)try{const ic='data:image/svg+xml,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" fill="#1e3a8a"/><circle cx="256" cy="256" r="170" fill="none" stroke="#d4af37" stroke-width="14"/><text x="256" y="320" font-size="200" text-anchor="middle" fill="#fff" font-family="serif">ن</text></svg>');
+const l=document.createElement('link');l.rel='manifest';l.href=URL.createObjectURL(new Blob([JSON.stringify({name:'مركز النعمان بن مقرن',short_name:'النعمان',display:'standalone',dir:'rtl',lang:'ar',start_url:'.',theme_color:'#1e3a8a',background_color:'#f0f4ff',icons:[{src:ic,sizes:'512x512',type:'image/svg+xml'}]})],{type:'application/manifest+json'}));document.head.appendChild(l)}catch(e){}
+let ip;addEventListener('beforeinstallprompt',e=>{e.preventDefault();ip=e;if(page==='settings')render()});
+if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol)&&!/claude/.test(location.host))navigator.serviceWorker.register('sw.js').catch(()=>{});
+render();persist();
+</script>
+</body>
+</html>
